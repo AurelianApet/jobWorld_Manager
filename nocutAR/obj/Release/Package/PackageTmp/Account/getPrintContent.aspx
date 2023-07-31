@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getPrintContent.aspx.cs" Inherits="jobworld.Account.getPrintContent" %>

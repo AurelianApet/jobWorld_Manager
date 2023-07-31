@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="setStatueAPI.aspx.cs" Inherits="jobworld.Account.setStatueAPI" %>

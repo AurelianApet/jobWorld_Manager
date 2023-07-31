@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getContentPath.aspx.cs" Inherits="jobworld.Account.getContentPath" %>

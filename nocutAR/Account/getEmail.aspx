@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getEmail.aspx.cs" Inherits="jobworld.Account.getEmail" %>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="setPrevStatue.aspx.cs" Inherits="jobworld.Account.setPrevStatue" %>

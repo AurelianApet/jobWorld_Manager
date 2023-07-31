@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="deleteAdvContent.aspx.cs" Inherits="jobworld.Account.deleteAdvContent" %>

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserPage.master.cs" Inherits="jobworld.Account.UserPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html>
+<head runat="server">
+    <title>관리자</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/admin.css" />
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="../Scripts/filebrowse.js"></script>
+    <script src="/Scripts/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/calendar.js"></script>
+    <link href="/Styles/calendar.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/common.css" rel="stylesheet" type="text/css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+     
+    <script type="text/javascript">
+
+        var imageDomain = "http://localhost:8011/imageFiles/";
+        var advDomain = "http://localhost:8011/advertisement/";
+        var conDomain = "http://localhost:8011/articleFiles/";
+
+/*
+        var imageDomain = "http://10.132.17.71:8011/imageFiles/";
+        var advDomain = "http://10.132.17.71:8011/advertisement/";
+        var conDomain = "http://10.132.17.71:8011/articleFiles/";
+*/
+
+        function onExperience()
+        {
+            document.location = "home.aspx";
+        }
+
+        function onContent()
+        {           
+            document.location = "content.aspx";
+        }
+
+        function onKiosk()
+        {
+            document.location = "kiosk.aspx";            
+        }
+        var server_url = "http://" + location.host;
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ToolkitScriptManager ID="scManager" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true">
+        </asp:ToolkitScriptManager>
+
+    <div id="header">
+	    <div class="area_logo">
+            <h1></h1>
+		    <h1>
+                <a><img src="../images/top_logo_new.png" align="신문사뉴스">
+                <strong>관리자 프로그램</strong></a>
+		    </h1>
+	    </div>
+	    <nav id="gnb">
+		    <ul class="clfix">
+			    <li id="menu1" style="background:#2d96c1"><a href="home.aspx">체험 관리</a></li>
+			    <li id="menu2"><a href="content.aspx">콘텐츠 관리</a></li>
+			    <li id="menu3"><a href="kiosk.aspx">키오스크 관리</a></li>
+		    </ul>
+	    </nav>
+    </div>
+    <div id="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderSearch" runat="server">
+        </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="footer">
+    	<p>2017 jobword all right reserved</p>
+    </div>
+    </form>
+</body>
+</html>

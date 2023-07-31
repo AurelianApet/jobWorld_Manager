@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{314462BB-689B-4288-A317-06B4DE7272F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jobworld</RootNamespace>
+    <AssemblyName>jobworld</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.50927.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorCode, Version=1.0.1.62759, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ColorCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Spire.License, Version=1.3.2.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="spire.pdf, Version=3.1.34.5040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\spire.pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Net.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\deleteAdvContent.aspx" />
+    <Content Include="Account\deleteContent.aspx" />
+    <Content Include="Account\getEmail.aspx" />
+    <Content Include="Account\getContentPath.aspx" />
+    <Content Include="Account\getImagePath.aspx" />
+    <Content Include="Account\getInformation.aspx" />
+    <Content Include="Account\getNewsname.aspx" />
+    <Content Include="Account\getPrintContent.aspx" />
+    <Content Include="Account\mailsender.aspx" />
+    <Content Include="Account\openKioskResult.aspx" />
+    <Content Include="Account\printArticle.aspx" />
+    <Content Include="Account\registerContent.aspx" />
+    <Content Include="Account\modifyContent.aspx" />
+    <Content Include="Account\content.aspx" />
+    <Content Include="Account\getAdvContent.aspx" />
+    <Content Include="Account\getlist.aspx" />
+    <Content Include="Account\getContent.aspx" />
+    <Content Include="Account\getInitStatue.aspx" />
+    <Content Include="Account\getInitStatueAPI.aspx" />
+    <Content Include="Account\resetTostep2.aspx" />
+    <Content Include="Account\saveInformation.aspx" />
+    <Content Include="Account\sendEmail.aspx" />
+    <Content Include="Account\setEcontentAPI.aspx" />
+    <Content Include="Account\setKiosk.aspx" />
+    <Content Include="Account\setPrevStatue.aspx" />
+    <Content Include="Account\setStatueAPI.aspx" />
+    <Content Include="Account\getStatueAPI.aspx" />
+    <Content Include="Account\home.aspx" />
+    <Content Include="Account\InitContent.aspx" />
+    <Content Include="Account\kiosk.aspx" />
+    <Content Include="Account\getFileSize.aspx" />
+    <Content Include="Account\PostUpload.aspx" />
+    <Content Include="Account\getExperience.aspx" />
+    <Content Include="Account\setLoginInformation.aspx" />
+    <Content Include="Account\setStatue.aspx" />
+    <Content Include="Account\setExperience.aspx" />
+    <Content Include="Account\UserPage.Master" />
+    <Content Include="img\icon_carender.png" />
+    <Content Include="img\icon_condition_green.png" />
+    <Content Include="img\icon_condition_red.png" />
+    <Content Include="img\icon_condition_yellow.png" />
+    <Content Include="img\left_admin.png" />
+    <Content Include="img\left_bt_confirm.png" />
+    <Content Include="img\left_bt_confirm_r.png" />
+    <Content Include="img\mainlist_numleft.png" />
+    <Content Include="img\mainlist_numright.png" />
+    <Content Include="img\popup_close.png" />
+    <Content Include="img\popup_close_r.png" />
+    <Content Include="img\top_bt_home.png" />
+    <Content Include="img\top_bt_home_r.png" />
+    <Content Include="img\top_bt_logout.png" />
+    <Content Include="img\top_bt_logout_r.png" />
+    <Content Include="img\top_bt_pw.png" />
+    <Content Include="img\top_bt_pw_r.png" />
+    <Content Include="img\top_logo.png" />
+    <Content Include="Scripts\calendar.js" />
+    <Content Include="Scripts\edit_obj.js" />
+    <Content Include="Scripts\init_obj.js" />
+    <Content Include="Scripts\detailcontents_opt.js" />
+    <Content Include="Scripts\filebrowse.js" />
+    <Content Include="Scripts\highcharts\highcharts.js" />
+    <Content Include="Scripts\highcharts\modules\broken-axis.js" />
+    <Content Include="Scripts\highcharts\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\modules\canvas-tools.js" />
+    <Content Include="Scripts\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\highcharts\modules\data.js" />
+    <Content Include="Scripts\highcharts\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\modules\drilldown.js" />
+    <Content Include="Scripts\highcharts\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\modules\funnel.js" />
+    <Content Include="Scripts\highcharts\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\modules\heatmap.js" />
+    <Content Include="Scripts\highcharts\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\modules\no-data-to-display.js" />
+    <Content Include="Scripts\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\modules\solid-gauge.js" />
+    <Content Include="Scripts\highcharts\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\modules\treemap.js" />
+    <Content Include="Scripts\highcharts\modules\treemap.src.js" />
+    <Content Include="Scripts\jquery-1.11.2.js" />
+    <Content Include="Scripts\jquery-1.11.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2\external\jquery\jquery.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.2\index.html" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.structure.css" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.theme.css" />
+    <Content Include="Scripts\jquery-ui-1.11.2\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\menu.js" />
+    <Content Include="Scripts\popup.js" />
+    <Content Include="Scripts\save_obj.js" />
+    <Content Include="Scripts\toolbar.js" />
+    <Content Include="Styles\Account.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\deleteAdvContent.aspx.cs">
+      <DependentUpon>deleteAdvContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\deleteAdvContent.aspx.designer.cs">
+      <DependentUpon>deleteAdvContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\deleteContent.aspx.cs">
+      <DependentUpon>deleteContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\deleteContent.aspx.designer.cs">
+      <DependentUpon>deleteContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getEmail.aspx.cs">
+      <DependentUpon>getEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getEmail.aspx.designer.cs">
+      <DependentUpon>getEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getContentPath.aspx.cs">
+      <DependentUpon>getContentPath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getContentPath.aspx.designer.cs">
+      <DependentUpon>getContentPath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getImagePath.aspx.cs">
+      <DependentUpon>getImagePath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getImagePath.aspx.designer.cs">
+      <DependentUpon>getImagePath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getInformation.aspx.cs">
+      <DependentUpon>getInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getInformation.aspx.designer.cs">
+      <DependentUpon>getInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getNewsname.aspx.cs">
+      <DependentUpon>getNewsname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getNewsname.aspx.designer.cs">
+      <DependentUpon>getNewsname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getPrintContent.aspx.cs">
+      <DependentUpon>getPrintContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getPrintContent.aspx.designer.cs">
+      <DependentUpon>getPrintContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\mailsender.aspx.cs">
+      <DependentUpon>mailsender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\mailsender.aspx.designer.cs">
+      <DependentUpon>mailsender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\openKioskResult.aspx.cs">
+      <DependentUpon>openKioskResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\openKioskResult.aspx.designer.cs">
+      <DependentUpon>openKioskResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\printArticle.aspx.cs">
+      <DependentUpon>printArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\printArticle.aspx.designer.cs">
+      <DependentUpon>printArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\registerContent.aspx.cs">
+      <DependentUpon>registerContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\registerContent.aspx.designer.cs">
+      <DependentUpon>registerContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\modifyContent.aspx.cs">
+      <DependentUpon>modifyContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\modifyContent.aspx.designer.cs">
+      <DependentUpon>modifyContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\content.aspx.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getAdvContent.aspx.cs">
+      <DependentUpon>getAdvContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getAdvContent.aspx.designer.cs">
+      <DependentUpon>getAdvContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getlist.aspx.cs">
+      <DependentUpon>getlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getlist.aspx.designer.cs">
+      <DependentUpon>getlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getContent.aspx.cs">
+      <DependentUpon>getContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getContent.aspx.designer.cs">
+      <DependentUpon>getContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getInitStatue.aspx.cs">
+      <DependentUpon>getInitStatue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getInitStatue.aspx.designer.cs">
+      <DependentUpon>getInitStatue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getInitStatueAPI.aspx.cs">
+      <DependentUpon>getInitStatueAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getInitStatueAPI.aspx.designer.cs">
+      <DependentUpon>getInitStatueAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\resetTostep2.aspx.cs">
+      <DependentUpon>resetTostep2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\resetTostep2.aspx.designer.cs">
+      <DependentUpon>resetTostep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\saveInformation.aspx.cs">
+      <DependentUpon>saveInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\saveInformation.aspx.designer.cs">
+      <DependentUpon>saveInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\sendEmail.aspx.cs">
+      <DependentUpon>sendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\sendEmail.aspx.designer.cs">
+      <DependentUpon>sendEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setEcontentAPI.aspx.cs">
+      <DependentUpon>setEcontentAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setEcontentAPI.aspx.designer.cs">
+      <DependentUpon>setEcontentAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setKiosk.aspx.cs">
+      <DependentUpon>setKiosk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setKiosk.aspx.designer.cs">
+      <DependentUpon>setKiosk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setPrevStatue.aspx.cs">
+      <DependentUpon>setPrevStatue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setPrevStatue.aspx.designer.cs">
+      <DependentUpon>setPrevStatue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setStatueAPI.aspx.cs">
+      <DependentUpon>setStatueAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setStatueAPI.aspx.designer.cs">
+      <DependentUpon>setStatueAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getStatueAPI.aspx.cs">
+      <DependentUpon>getStatueAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getStatueAPI.aspx.designer.cs">
+      <DependentUpon>getStatueAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\InitContent.aspx.cs">
+      <DependentUpon>InitContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\InitContent.aspx.designer.cs">
+      <DependentUpon>InitContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\kiosk.aspx.cs">
+      <DependentUpon>kiosk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\kiosk.aspx.designer.cs">
+      <DependentUpon>kiosk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getFileSize.aspx.cs">
+      <DependentUpon>getFileSize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getFileSize.aspx.designer.cs">
+      <DependentUpon>getFileSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PostUpload.aspx.cs">
+      <DependentUpon>PostUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PostUpload.aspx.designer.cs">
+      <DependentUpon>PostUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\getExperience.aspx.cs">
+      <DependentUpon>getExperience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\getExperience.aspx.designer.cs">
+      <DependentUpon>getExperience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setLoginInformation.aspx.cs">
+      <DependentUpon>setLoginInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setLoginInformation.aspx.designer.cs">
+      <DependentUpon>setLoginInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setStatue.aspx.cs">
+      <DependentUpon>setStatue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setStatue.aspx.designer.cs">
+      <DependentUpon>setStatue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\setExperience.aspx.cs">
+      <DependentUpon>setExperience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\setExperience.aspx.designer.cs">
+      <DependentUpon>setExperience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserPage.Master.cs">
+      <DependentUpon>UserPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserPage.Master.designer.cs">
+      <DependentUpon>UserPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Err.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Err.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Msg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Msg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RegEx.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegEx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Str.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Str.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AjaxPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AuthUser.cs" />
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\DBManager.cs" />
+    <Compile Include="Common\Defines.cs" />
+    <Compile Include="Common\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{8B687615-F210-4F45-A09D-61AEFB89F9BA}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RegEx.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RegEx.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Err.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Err.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Msg.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Msg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Str.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Str.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ACTIVEXLib">
+      <Guid>{EA3E6E3C-5130-49C1-8EDE-F889CD0F4429}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.OutlookViewCtl">
+      <Guid>{0006F062-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="OutlookSocialProvider">
+      <Guid>{1F8E79BA-9268-4889-ADF3-6D2AABB3C32C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SharePointProvider">
+      <Guid>{E301A065-3DF5-4378-A829-57B1EA986631}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1978</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19785/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

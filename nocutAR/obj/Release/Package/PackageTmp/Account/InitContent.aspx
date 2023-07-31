@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InitContent.aspx.cs" Inherits="jobworld.Account.InitContent" %>
